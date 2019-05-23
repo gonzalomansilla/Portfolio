@@ -1,0 +1,13 @@
+.footer {
+
+    & span {
+        font-size: $text-size__small;
+        color: $text-white;
+    }
+}
+
+.footer-bg {
+    clip-path: polygon(0 0, 100% 64px, 100% 100%, 0 100%);
+    background-color: $color-tertiary;
+
+}

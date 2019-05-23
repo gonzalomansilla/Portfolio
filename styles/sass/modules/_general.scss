@@ -1,0 +1,202 @@
+// Modulos
+.title {
+  position: relative;
+  font-size: $text-size__title;
+  font-weight: $font-weight__regular;
+  letter-spacing: $letter-spacing__title;
+  text-transform: uppercase;
+  color: $color-tertiary;
+
+  & .colorful-title {
+    font-size: $text-size__title;
+    font-weight: $font-weight__regular;
+    color: $color-secundary;
+  }
+
+}
+
+.title {
+  justify-self: center;
+  color: $color-tertiary;
+}
+
+//Modulo: Formulario
+.form {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-areas:
+    "name email"
+    "message message"
+    ". submit";
+  justify-items: center;
+}
+
+.input[name="email"] {
+  grid-area: email;
+}
+
+.input[name="name"] {
+  grid-area: name;
+}
+
+.input[name="message"] {
+  grid-area: message;
+}
+
+.input {
+  height: 56px;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+
+.input {
+  border: none;
+  border: 1.5px solid white;
+  border-radius: $border-radius__normal;
+  font-size: $text-size__normal;
+  font-weight: $font-weight__light;
+  background-color: transparent;
+  color: white;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+.textarea {
+  padding-top: 1rem;
+  height: 180px;
+  resize: none;
+}
+
+.form__button {
+  grid-area: submit;
+  justify-self: right;
+}
+
+
+//Modulo: Label
+.labels {
+  //Utilizar width si hay un desborde de labels
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.labels__label {
+  margin: 4px;
+}
+
+.label {
+  padding: 4px 16px;
+  width: auto;
+  font-weight: $font-weight__regular;
+  border-radius: $border-radius__label;
+}
+
+.label_size_normal {
+  height: 28px;
+}
+
+.label_size_small {
+  height: 24px;
+  font-weight: $font-weight__regular;
+  font-size: $text-size__small;
+}
+
+.label_theme_blue {
+  background-color: $color-secundary;
+}
+
+.label_theme_white {
+  background-color: white;
+
+  &>a {
+    // color: $color-tertiary;
+    color: $color-secundary;
+  }
+
+}
+
+//Modulo: Botones
+.button {
+  width: auto;
+}
+
+.button {
+  border-radius: $border-radius__normal;
+  font-size: $text-size__normal;
+  font-weight: $font-weight__light;
+  border: none;
+}
+
+.btn_primary {
+  background-color: $color-secundary;
+  color: $text-white;
+
+  &:hover {
+    background-color: hsl(219, 95%, 44%);
+  }
+}
+
+.btn_secundary {
+  border: 1.5px solid $color-secundary;
+  color: $color-secundary;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-secundary;
+    color: $text-white;
+  }
+}
+
+.btn_medium {
+  height: 36px;
+  padding: 8px 16px;
+}
+
+.btn_large {
+  height: 40px;
+  padding: 2px 48px;
+}
+
+.btn_theme_white {
+  background-color: white;
+  color: $color-secundary;
+
+  &:hover {
+    background-color: white;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.25);
+    transition: all .2s;
+  }
+}
+
+//modulo: Icon
+.icon {
+  padding: 8px;
+}
+
+.icons_theme-white {
+  color: white;
+}
+
+.icons_theme-dark {
+  color: $color-tertiary;
+}
+
+//Modulo: Iconos sociales
+.social-icons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, auto);
+  grid-column-gap: 32px;
+}
+
+.social-icons__icon {
+  align-self: center;
+}

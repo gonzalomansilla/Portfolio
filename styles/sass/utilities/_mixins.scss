@@ -1,0 +1,28 @@
+@mixin centered($position) {
+    position: $position;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin positioning($position, $top, $left, $translate) {
+    position: $position;
+    top: $top;
+    left: $left;
+    transform: $translate;
+}
+
+//Navbar
+
+
+
+//About
+
+
+
+// Generales
+
+@mixin dimensions-base {
+    width: 80%;
+    margin: 104px auto 0 auto;
+}

@@ -1,0 +1,41 @@
+/* BASES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 2px;
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: $text-white;
+    cursor: pointer;
+}
+
+p,
+span {
+    font-size: $text-size__normal;
+    font-weight: $font-weight__light;
+    letter-spacing: $letter-spacing__normal;
+    line-height: $line-height;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}

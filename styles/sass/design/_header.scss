@@ -1,0 +1,50 @@
+/* DISEÑO */
+.header__img {
+    background: url('../../../img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 calc(100% - 64px));
+    filter: brightness(.25);
+}
+
+.text {
+    text-align: center;
+
+    & h1,
+    span {
+        font-weight: $font-weight__medium;
+        font-family: 'Jura', monospace;
+    }
+}
+
+.text__greeting {
+    letter-spacing: .8rem;
+    font-size: $text-size__header1;
+    // font-weight: $font-weight__medium;
+    color: $color-secundary;
+
+    & span {
+        // font-weight: $font-weight__medium;
+        letter-spacing: .8rem;
+        font-size: $text-size__header1;
+        color: $text-white;
+    }
+}
+
+.text__profession {
+    justify-self: center;
+    // font-weight: $font-weight__medium;
+    font-size: $text-size__title;
+    color: $text-white;
+
+    &::before {
+        content: "";
+        background-color: hsla(219, 95%, 55%, 0.8);
+        clip-path: polygon(6% 0, 100% 0%, 94% 100%, 0% 100%);
+    }
+}
+
+.header__social-icons {
+    //
+}

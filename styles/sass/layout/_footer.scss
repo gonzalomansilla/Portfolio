@@ -1,0 +1,23 @@
+.footer {
+    // height: 150px;
+    align-content: center;
+
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 16px;
+    grid-template-areas:
+        "copyright"
+        "social-icons";
+    padding: 64px;
+
+}
+
+.footer__copyright {
+    text-align: center;
+    grid-area: copyright;
+}
+
+.footer__social-icons {
+    grid-area: social-icons;
+    justify-self: center;
+}
