@@ -55,15 +55,15 @@
 
 .input {
   border: none;
-  border: 1.5px solid white;
+  border: 1.5px solid rgba(0, 0, 0, 0);
   border-radius: $border-radius__normal;
   font-size: $text-size__normal;
   font-weight: $font-weight__light;
-  background-color: transparent;
-  color: white;
+  color: rgba(0, 0, 0, 0.897);
+  background: white;
 
   &::placeholder {
-    color: #fff;
+    color: rgba(22, 22, 22, 0.774);
   }
 }
 
@@ -94,6 +94,8 @@
 
 .label {
   padding: 4px 16px;
+  padding-top: 6px;
+  /*Parche: desface de letra*/
   width: auto;
   font-weight: $font-weight__regular;
   border-radius: $border-radius__label;
@@ -158,11 +160,15 @@
 .btn_medium {
   height: 36px;
   padding: 8px 16px;
+  padding-top: 10px;
 }
 
 .btn_large {
   height: 40px;
-  padding: 2px 48px;
+  padding: 8px 48px;
+  font-weight: $font-weight__medium;
+
+  // padding-bottom: 0px;
 }
 
 .btn_theme_white {

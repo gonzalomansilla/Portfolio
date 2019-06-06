@@ -1,17 +1,15 @@
-//Modulo
-
-
 .proyect {
-    //
 
     &:hover>.proyect__details {
         opacity: 1;
-        // box-shadow: $shadow-proyect-detils;
     }
 }
 
 .proyect__img-container {
+    object-fit: cover;
 }
+
+.proyect__img {}
 
 .proyects__txt-all-proyects {
     text-align: center;
@@ -26,7 +24,6 @@
 .details {
     text-align: center;
     background: $color-secundary-transparent;
-    // clip-path: polygon(calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px), 0 0);
 }
 
 .details__title {
@@ -35,6 +32,13 @@
     text-transform: uppercase;
 }
 
-.details__description {
-    // font-size: 1rem;
+.details__description {}
+
+
+/*Auxiliares 
+    Mover a un nuevo archivo
+*/
+.center-img {
+    object-fit: cover;
+    height: 100%;
 }

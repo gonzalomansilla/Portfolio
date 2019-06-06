@@ -429,15 +429,15 @@ button {
 
 .input {
   border: none;
-  border: 1.5px solid white;
+  border: 1.5px solid rgba(0, 0, 0, 0);
   border-radius: 6px;
   font-size: 1rem;
   font-weight: 300;
-  background-color: transparent;
-  color: white;
+  color: rgba(0, 0, 0, 0.897);
+  background: white;
 }
 .input::placeholder {
-  color: #fff;
+  color: rgba(22, 22, 22, 0.774);
 }
 
 .textarea {
@@ -464,6 +464,8 @@ button {
 
 .label {
   padding: 4px 16px;
+  padding-top: 6px;
+  /*Parche: desface de letra*/
   width: auto;
   font-weight: 400;
   border-radius: 25px;
@@ -522,11 +524,13 @@ button {
 .btn_medium {
   height: 36px;
   padding: 8px 16px;
+  padding-top: 10px;
 }
 
 .btn_large {
   height: 40px;
-  padding: 2px 48px;
+  padding: 8px 48px;
+  font-weight: 500;
 }
 
 .btn_theme_white {
@@ -888,7 +892,7 @@ button {
 
 /* DISEÑO */
 .header__img {
-  background: url("../../../img/header-bg.jpg");
+  background: url(../../../img/header-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -990,6 +994,10 @@ body {
   opacity: 1;
 }
 
+.proyect__img-container {
+  object-fit: cover;
+}
+
 .proyects__txt-all-proyects {
   text-align: center;
   color: rgba(20, 20, 20, 0.85);
@@ -1009,6 +1017,14 @@ body {
   font-size: 1.333rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+/*Auxiliares 
+    Mover a un nuevo archivo
+*/
+.center-img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .contact-bg {

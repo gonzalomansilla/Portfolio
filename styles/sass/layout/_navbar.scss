@@ -21,7 +21,6 @@
 
 .navbar__items {
 
-    // 
     &>li {
         display: inline-block;
     }
@@ -30,9 +29,6 @@
 .navbar__center-items {
     display: flex;
     flex-direction: column;
-
-    //Parche: arreglo el pequeño desfase con el titulo debajo
-    // padding-left: 40px;
 }
 
 .navbar__item {
@@ -42,10 +38,7 @@
     }
 }
 
-.navbar__item-img {
-    // 
-
-}
+.navbar__item-img {}
 
 .navbar__item-img-perfil {
     object-fit: cover;
@@ -55,8 +48,6 @@
 }
 
 .navbar__text {
-    //
-
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -64,10 +55,6 @@
 
 .navbar__name {
     margin-bottom: 4px;
-
-    //
 }
 
-.navbar__profession {
-    //
-}
+.navbar__profession {}

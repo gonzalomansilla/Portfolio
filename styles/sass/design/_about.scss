@@ -1,7 +1,6 @@
 .img-perfil__container {
 
   & img {
-    // border-radius: $border-radius__img;
     object-fit: cover;
     object-position: top;
     box-shadow: $shadow-img;
@@ -12,7 +11,6 @@
     background: $color-secundary;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%);
   }
-
 }
 
 .perfil__subtitle {
