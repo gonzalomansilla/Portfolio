@@ -95,7 +95,7 @@
 .details__labels {
     grid-area: labels;
     justify-content: left;
-    align-content: flex-end;
+    align-self: flex-end;
     // Parche: soluciona alineamiento con respecto al link de GitHub
     margin-bottom: -4px;
 }
