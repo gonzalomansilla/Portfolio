@@ -799,7 +799,7 @@ button {
 .details__labels {
   grid-area: labels;
   justify-content: left;
-  align-content: flex-end;
+  align-self: flex-end;
   margin-bottom: -4px;
 }
 
@@ -1046,6 +1046,7 @@ body {
 
 .contact-option__title {
   font-weight: 400;
+  color: #fff;
 }
 
 .footer span {
