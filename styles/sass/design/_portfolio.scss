@@ -1,4 +1,5 @@
 .proyect {
+    cursor: pointer;
 
     &:hover>.proyect__details {
         opacity: 1;
@@ -11,9 +12,15 @@
 
 .proyect__img {}
 
-.proyects__txt-all-proyects {
+.proyects__all-proyects {
+    justify-self: center;
     text-align: center;
     color: $color-tertiary-transparent;
+
+    & :hover {
+        cursor: pointer;
+    }
+
 }
 
 .proyect__details {
@@ -32,12 +39,6 @@
     text-transform: uppercase;
 }
 
-.details__description {}
-
-
-/*Auxiliares 
-    Mover a un nuevo archivo
-*/
 .center-img {
     object-fit: cover;
     height: 100%;

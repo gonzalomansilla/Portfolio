@@ -715,11 +715,11 @@ button {
 .portfolio {
   width: 80%;
   margin: 104px auto 0 auto;
+  margin-bottom: 104px;
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: 1fr;
   grid-gap: 48px;
-  margin-bottom: 48px;
   grid-template-areas: "title" "labels" "proyects";
 }
 
@@ -761,9 +761,9 @@ button {
   width: 100%;
 }
 
-.proyects__txt-all-proyects {
+.proyects__all-proyects {
   grid-column: 1/-1;
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 .proyect__details {
@@ -892,7 +892,7 @@ button {
 
 /* DISEÑO */
 .header__img {
-  background: url(../../../img/header-bg.jpg);
+  background-image: url(./../img/header-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -990,6 +990,9 @@ body {
   color: rgba(20, 20, 20, 0.85);
 }
 
+.proyect {
+  cursor: pointer;
+}
 .proyect:hover > .proyect__details {
   opacity: 1;
 }
@@ -998,9 +1001,14 @@ body {
   object-fit: cover;
 }
 
-.proyects__txt-all-proyects {
+.proyects__all-proyects {
+  justify-self: center;
   text-align: center;
   color: rgba(20, 20, 20, 0.85);
+}
+.proyects__all-proyects :hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .proyect__details {
@@ -1019,9 +1027,6 @@ body {
   text-transform: uppercase;
 }
 
-/*Auxiliares 
-    Mover a un nuevo archivo
-*/
 .center-img {
   object-fit: cover;
   height: 100%;
@@ -1057,6 +1062,12 @@ body {
 .footer-bg {
   clip-path: polygon(0 0, 100% 64px, 100% 100%, 0 100%);
   background-color: #141414;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
