@@ -1,8 +1,8 @@
 ## Portafolio
-***
-Con este proyecto decidi entrar al mundo del desarrollo WEB de forma autodidacta, por lo que es el primero que realice (y diseñe).
 
-En cuanto a las herramientas utilizadas, para el diseño se utilizo Figma, donde se lo puede encontrar en este [link](https://www.figma.com/file/c3bssv7poc5hkzxES6VHefBi/Portafolio?node-id=91%3A0). Para realizar la implementacion, solo se utilizo **HTML**, **CSS** y **JS** puro, es decir, sin usar Librerias o Framewoks. En el desarrollo tambien se utilizo metodologías que hacian al proyecto escalable y facil de mantener, como [BEM](https://en.bem.info/methodology/quick-start/) y [SMACC](http://smacss.com/).
+Con este proyecto decidí entrar al mundo del desarrollo WEB de forma autodidacta, por lo que es el primero que realice (y diseñe).
 
-![Diseño de portafolio](https://imgur.com/BWiDppp.png)
+En cuanto a las herramientas utilizadas, para el diseño se utilizó Figma, donde se lo puede encontrar en este [link](https://www.figma.com/file/c3bssv7poc5hkzxES6VHefBi/Portafolio?node-id=91%3A0). Para la maquetación, solo se utilizo **HTML**, **CSS** y **JS** puro, es decir, sin usar Librerías o Framewoks. En el desarrollo también se utilizó metodologías que hacían al proyecto escalable y fácil de mantener, como [BEM](https://en.bem.info/methodology/quick-start/) y [SMACC](http://smacss.com/).
+
+![Diseño de portafolio](https://i.imgur.com/ms24CFZ.png)
 
