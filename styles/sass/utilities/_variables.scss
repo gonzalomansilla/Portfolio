@@ -5,7 +5,7 @@ $color-secundary: hsl(219, 95%, 55%) !default;
 $color-secundary-transparent: hsla(219, 95%, 55%, 0.85) !default;
 $color-tertiary: hsl(0, 0%, 8%) !default;
 $color-tertiary-transparent: hsla(0, 0%, 8%, 0.85) !default;
-$color-gradient-contact: linear-gradient(to bottom, hsla(219, 95%, 55%), hsla(219, 95%, 44%));
+$color-gradient-contact: linear-gradient(to bottom, hsl(219, 95%, 55%), hsl(219, 95%, 44%));
 
 // Colores de texto
 $text-primary: hsla(0, 0%, 8%, 0.85) !default;

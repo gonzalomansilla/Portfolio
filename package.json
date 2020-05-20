@@ -1,0 +1,31 @@
+{
+  "name": "portfolio_frontend",
+  "version": "1.0.0",
+  "description": "Pequeño porfolio de un desarrollador",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-compile": "npm run compile-styles-sass && css-minify",
+    "compile-styles-sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 styles/main.scss styles/main.css",
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output styles/main.min.css styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewtonGrav/Portfolio_frontend.git"
+  },
+  "author": "Gonzalo Mansilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewtonGrav/Portfolio_frontend/issues"
+  },
+  "homepage": "https://github.com/NewtonGrav/Portfolio_frontend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-static": "^1.2.6"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1"
+  }
+}

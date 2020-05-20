@@ -7,3 +7,15 @@ En cuanto a las herramientas utilizadas, para el diseño se utilizó Figma, dond
 [Preview](https://newtongrav.github.io/Portfolio_frontend/)
 
 ![Diseño de portafolio](https://i.imgur.com/ms24CFZ.png)
+
+## Project setup
+
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+
+```
+npm run start
+```
