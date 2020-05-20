@@ -54,7 +54,7 @@
 .about__more-info {
   grid-area: more_info;
   display: flex;
-  justify-content: right;
+  justify-self: right;
 }
 
 .about__button {}
