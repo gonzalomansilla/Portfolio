@@ -1,9 +1,0 @@
-{
-    "files.autoSave": "afterDelay",
-    "editor.fontSize": 16,
-    "editor.fontFamily": "'hack','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.wordWrap": "on",
-    "bracketPairColorizer.highlightActiveScope": true,
-    "bracketPairColorizer.forceUniqueOpeningColor": true,
-    "color-highlight.matchWords": true
-}
