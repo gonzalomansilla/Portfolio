@@ -1,6 +1,3 @@
-let http = require('http');
-let fs = require('fs');   // Sistema de archivos de node.js
-
 //para renderizar pagina completamente
 const express = require('express');
 const app = express();

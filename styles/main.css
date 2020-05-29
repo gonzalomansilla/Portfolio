@@ -902,7 +902,7 @@ button {
 
 /* DISEÑO */
 .header__img {
-  background-image: url(./../img/header-bg.jpg);
+  background-image: url(./../img/optimized/header-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

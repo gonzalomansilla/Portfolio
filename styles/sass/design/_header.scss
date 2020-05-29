@@ -1,7 +1,6 @@
 /* DISEÑO */
 .header__img {
-    background-image: url(./../img/header-bg.jpg);
-    // background-image: url(/img/header-bg.jpg);
+    background-image: url(./../img/optimized/header-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,11 +21,9 @@
 .text__greeting {
     letter-spacing: .8rem;
     font-size: $text-size__header1;
-    // font-weight: $font-weight__medium;
     color: $color-secundary;
 
     & span {
-        // font-weight: $font-weight__medium;
         letter-spacing: .8rem;
         font-size: $text-size__header1;
         color: $text-white;
@@ -35,7 +32,6 @@
 
 .text__profession {
     justify-self: center;
-    // font-weight: $font-weight__medium;
     font-size: $text-size__title;
     color: $text-white;
 
@@ -44,8 +40,4 @@
         background-color: hsla(219, 95%, 55%, 0.8);
         clip-path: polygon(6% 0, 100% 0%, 94% 100%, 0% 100%);
     }
-}
-
-.header__social-icons {
-    //
 }
