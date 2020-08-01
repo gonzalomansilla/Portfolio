@@ -1,11 +1,16 @@
 module.exports = {
   purge: [],
   theme: {
-    fontFamily: {
-      'header': ['Jura', 'Georgia'],
-      'body': ['Overpass', 'sans-serif']
+    extend: {
+      colors: {
+        primary: 'hsl(219, 95%, 55%)',
+        myDark: 'hsl(0, 0%, 21%)'
+      },
+      fontFamily: {
+        'header': ['Jura', 'Georgia'],
+        'body': ['Overpass', 'sans-serif']
+      },
     },
-    extend: {},
   },
   variants: {},
   plugins: [],
