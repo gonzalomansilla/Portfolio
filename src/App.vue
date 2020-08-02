@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    
+    <!-- Header -->
+
+    <div class="app-container font-body">
+      
+    </div>
   </div>
 </template>
 
