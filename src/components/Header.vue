@@ -41,8 +41,8 @@ export default {
 .text__profession {
   &:before {
       content: "";
-      // TODO: Investigacion -> Uso de variables (opacity)
-      background-color: hsla(219, 95%, 55%, 0.8);
+      background-color: theme('colors.primary');
+      opacity: theme('opacity.75');
       clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
   }
 }
