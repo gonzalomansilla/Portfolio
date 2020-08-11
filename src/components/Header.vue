@@ -1,5 +1,5 @@
 <template>
-  <header class="relative w-full h-screen font-header">
+  <header class="relative w-full h-screen mb-12 font-header">
     <div class="header__img absolute top-0 w-full h-screen"></div>
 
     <div class="header__content grid grid-rows-2 gap-8 h-screen">
@@ -36,10 +36,10 @@ export default {
 .header__img {
   z-index: -10;
   background-image: url("./../../public/img/header-bg.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: theme('backgroundSize.cover');
+  background-position: theme('backgroundPosition.center');
   background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 48px), 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% calc(100% - theme('spacing.12')), 0 100%);
   filter: brightness(0.25);
 }
 
@@ -58,7 +58,7 @@ export default {
 }
 
 .header__img {
-  height: calc(100% + 48px);
+  height: calc(100% + theme('spacing.12'));
 }
 
 .text__profession {
