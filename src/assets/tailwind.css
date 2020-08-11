@@ -4,25 +4,25 @@
 
 @screen ss {
   .app-container {
-    @apply px-4;
+    padding: 0 theme('padding.4');
   }
 }
 
 @screen md {
   .app-container {
-    @apply px-8;
+     padding: 0 theme('padding.8');
   }
 }
 
 @screen lg {
   .app-container {
-    @apply px-16;
+     padding: 0 theme('padding.16');
   }
 }
 
 @screen xl {
   .app-container {
-    @apply px-24;
+     padding: 0 theme('padding.24');
   }
 }
 
