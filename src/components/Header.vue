@@ -4,20 +4,16 @@
 
     <div class="header__content grid grid-rows-2 gap-8 h-screen">
       <h1
-        class="text-5xl sm:text-6xl self-end text-center text-primary font-light tracking-wider leading-tight"
+        class="text-5xl sm:text-6xl self-end text-center text-white font-light tracking-wider leading-tight"
       >
-        Hello
-        <span class="text-white">
-          , i'm
-          <br class="block md:hidden"/>Johon Doe
-        </span>
+        <span class="text-primary">Hello</span>
+        <span class="">, i'm </span>
+        <br class="block md:hidden" />Johon Doe
       </h1>
 
       <h1
-        class="relative self-start ss:w-auto px-12 py-1 sm:px-16 text-2xl sm:text-3xl text-center text-white"
-      >
-        WEB DEVELOPER
-      </h1>
+        class="text__profession relative self-start ss:w-auto px-12 py-1 sm:px-16 text-2xl sm:text-3xl text-center text-white"
+      >WEB DEVELOPER</h1>
 
       <IconsList class="mb-12"></IconsList>
     </div>
@@ -28,10 +24,10 @@
 import IconsList from "./ui/IconsList";
 
 export default {
-  name: 'Header',
+  name: "Header",
   components: {
-    IconsList
-  }
+    IconsList,
+  },
 };
 </script>
 
