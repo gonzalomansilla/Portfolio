@@ -7,7 +7,7 @@ module.exports = {
       },
       colors: {
         primary: 'hsl(219, 95%, 55%)',
-        myDark: 'hsl(0, 0%, 21%)'
+        'gray-dark': 'hsl(0, 0%, 21%)'
       },
       fontFamily: {
         'header': ['Jura', 'Georgia'],
