@@ -2,7 +2,7 @@
   <header class="relative w-full h-screen mb-12 font-header">
     <div class="header__img absolute top-0 w-full h-screen"></div>
 
-    <div class="header__content h-screen justify-center items-center">
+    <div class="header__content h-screen items-center">
       <div class="content__text grid grid-flow-row gap-8 content-center">
         <h1
           class="text-5xl sm:text-6xl text-center text-white font-light tracking-wider leading-tight"
@@ -64,6 +64,8 @@ export default {
 .header__content {
   display: grid;
   grid-template-rows: 1fr auto;
+
+  justify-items: center;
 
   & .content__text {
     justify-items: center;
