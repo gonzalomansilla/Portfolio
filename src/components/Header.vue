@@ -2,18 +2,22 @@
   <header class="relative w-full h-screen mb-12 font-header">
     <div class="header__img absolute top-0 w-full h-screen"></div>
 
-    <div class="header__content grid grid-rows-2 gap-8 h-screen">
-      <h1
-        class="text-5xl sm:text-6xl self-end text-center text-white font-light tracking-wider leading-tight"
-      >
-        <span class="text-primary">Hello</span>
-        <span class="">, i'm </span>
-        <br class="block md:hidden" />Johon Doe
-      </h1>
+    <div class="header__content h-screen justify-center items-center">
+      <div class="content__text grid grid-flow-row gap-8 content-center">
+        <h1
+          class="text-5xl sm:text-6xl text-center text-white font-light tracking-wider leading-tight"
+        >
+          <span class="text-primary">Hello</span>
+          <span class="">, i'm </span>
+          <br class="block md:hidden" />Johon Doe
+        </h1>
 
-      <h1
-        class="text__profession relative self-start ss:w-auto px-12 py-1 sm:px-16 text-2xl sm:text-3xl text-center text-white"
-      >WEB DEVELOPER</h1>
+        <h1
+          class="text__profession relative px-12 py-1 sm:px-16 text-2xl sm:text-3xl text-center text-white"
+        >
+          WEB DEVELOPER
+        </h1>
+      </div>
 
       <IconsList class="mb-12"></IconsList>
     </div>
@@ -53,26 +57,33 @@ export default {
 }
 
 /* LAYOUT */
-.header__content {
-  justify-items: center;
-}
-
 .header__img {
   height: calc(100% + theme('spacing.12'));
 }
 
-.text__profession {
-  min-width: 264px;
+.header__content {
+  display: grid;
+  grid-template-rows: 1fr auto;
 
-  &::before {
-    position: absolute;
-    display: inline-block;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
+  & .content__text {
+    justify-items: center;
+
+    .text__profession {
+      min-width: 264px;
+      max-width: max-content;
+  
+      &::before {
+        position: absolute;
+        display: inline-block;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
+
 </style>
