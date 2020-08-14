@@ -1,6 +1,8 @@
 <template>
   <section class="pt-32 text-gray-dark">
-    <h2 class="mb-12 text-3xl text-center capitalize">{{ sectionTitle }}</h2>
+    <h2 class="section__title mb-12 text-3xl text-center uppercase">
+      {{ sectionTitle }}
+    </h2>
 
     <slot name="section-content">
 
@@ -20,4 +22,33 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.section__title {
+  width: max-content;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: theme('spacing.3');
+    top: 45%;
+    transform: translateY(-50%);
+    left: theme('space.-3');
+    background: theme('colors.primary');
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: theme('spacing.3');
+    top: 45%;
+    transform: translateY(-50%);
+    right: theme('space.-3');
+    background: theme('colors.primary');
+  }
+}
+</style>
