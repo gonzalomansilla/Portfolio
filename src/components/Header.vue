@@ -7,7 +7,7 @@
         <h1
           class="text-5xl sm:text-6xl text-center text-white font-light tracking-wider leading-tight"
         >
-          <span class="text-primary">Hello</span>
+          <span class="text-primary-50">Hello</span>
           <span class="">, i'm </span>
           <br class="block md:hidden" />Johon Doe
         </h1>
@@ -50,7 +50,7 @@ export default {
 .text__profession {
   &:before {
     content: "";
-    background-color: theme("colors.primary");
+    background-color: theme("colors.primary-50");
     opacity: theme("opacity.75");
     clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
   }

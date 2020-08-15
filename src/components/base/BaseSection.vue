@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "AppSection",
+  name: "BaseSection",
   props: {
     sectionTitle: {
       type: String,
@@ -36,7 +36,7 @@ export default {
     top: 45%;
     transform: translateY(-50%);
     left: theme('space.-3');
-    background: theme('colors.primary');
+    background: theme('colors.primary-50');
   }
 
   &::before {
@@ -48,7 +48,7 @@ export default {
     top: 45%;
     transform: translateY(-50%);
     right: theme('space.-3');
-    background: theme('colors.primary');
+    background: theme('colors.primary-50');
   }
 }
 </style>
