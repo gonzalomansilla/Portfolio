@@ -1,18 +1,12 @@
 <template>
-  <button class="w-full md:w-auto font-light px-8 py-2 rounded-md shadow-md">
+  <button class="w-full md:w-auto px-8 py-2 tracking-wide font-light rounded-md shadow-md">
     <slot name="text"></slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: 'BaseButton',
-  props: {
-    text: {
-      type: String,
-      requiere: true
-    }
-  }
+  name: 'BaseButton'
 }
 </script>
 
