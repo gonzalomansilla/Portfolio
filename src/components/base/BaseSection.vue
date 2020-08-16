@@ -1,6 +1,6 @@
 <template>
   <section class="pt-32 text-gray-dark">
-    <h2 class="section__title mb-12 text-3xl text-center uppercase">
+    <h2 class="section__title mx-auto mb-12 text-3xl text-center uppercase">
       {{ sectionTitle }}
     </h2>
 
