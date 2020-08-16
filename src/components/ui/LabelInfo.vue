@@ -1,5 +1,5 @@
 <template>
-  <p class="align-middle">
+  <p class="align-middle leading-none">
     <span class="font-bold capitalize">{{ labelTitle }}: </span>
     <span class="pl-1 capitalize opacity-75">{{ labelValue }}</span>
     <slot name="special-text"></slot>
