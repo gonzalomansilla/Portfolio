@@ -2,25 +2,25 @@
   <AppSection section-title="About Me">
     <template #section-content>
       <div class="content">
+        <!-- TODO Imagen de perfil -->
         <div class="about__img-perfil img-perfil">
           <div class="img-perfil__container hidden">
             <img src="img/optimized/perfil.jpg" alt="perfil_photo" />
           </div>
         </div>
 
-        <div class="grid gap-8">
-          <div>
-            <h3 class="mb-2 text-xl font-light text-primary-50 capitalize">who am i?</h3>
+        <div class="grid gap-6">
+          <div class="grid gap-3">
+            <h3 class="text-xl font-light text-primary-50 capitalize">who am i?</h3>
             <h2
-              class="mb-2 text-xl font-bold capitalize"
+              class="text-xl font-bold capitalize"
             >i'm john doe, a web developer and visual ux/ui designer</h2>
-            <p class="pb-2">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio
               maiores, earum cupiditate ipsa recusandae pariatur aperiam enim
               blanditiis animi iusto tempora aliquam reprehenderit eius autem.
               Veniam odit minus rerum.
-            </p>
-            <p>
+              <br>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
               quidem delectus alias sit ipsum ducimus id, perspiciatis itaque
               maiores commodi.
@@ -30,7 +30,7 @@
           <hr class="bg-gray-400" />
 
           <div class="more-info__container grid gap-8">
-            <div class="info__labels grid gap-4">
+            <div class="info__labels grid gap-2 md:gap-4">
               <LabelInfo label-title="full name" label-value="john doe"></LabelInfo>
               <LabelInfo label-title="age" label-value="23"></LabelInfo>
               <LabelInfo label-title="email">
