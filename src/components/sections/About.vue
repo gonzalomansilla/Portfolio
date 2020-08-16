@@ -1,5 +1,5 @@
 <template>
-  <AppSection section-title="About Me">
+  <BaseSection section-title="about me">
     <template #section-content>
       <div class="content">
         <!-- TODO Imagen de perfil -->
@@ -46,18 +46,18 @@
         </div>
       </div>
     </template>
-  </AppSection>
+  </BaseSection>
 </template>
 
 <script>
-import AppSection from "./../base/BaseSection";
+import BaseSection from "./../base/BaseSection";
 import BtnPrimary from "./../ui/buttons/Primary";
 import LabelInfo from "./../ui/LabelInfo";
 
 export default {
   name: "AboutSection",
   components: {
-    AppSection,
+    BaseSection,
     BtnPrimary,
     LabelInfo,
   },
