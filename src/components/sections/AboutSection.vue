@@ -29,11 +29,8 @@
 
         <!-- TODO More info -->
 
-        <!-- TODO Component -> Button primary -->
         <div class="about__more-info mb-12">
-          <button class="bg-primary-50 w-full md:w-auto text-white font-light px-8 py-2 rounded-md shadow-md hover:bg-primary-60">
-            Dowload CV
-          </button>
+          <BtnPrimary text="Dowload CV"></BtnPrimary>
         </div>
       </div>
     </template>
@@ -42,11 +39,13 @@
 
 <script>
 import AppSection from "./../base/BaseSection";
+import BtnPrimary from "./../ui/buttons/Primary";
 
 export default {
   name: "AboutSection",
   components: {
     AppSection,
+    BtnPrimary
   },
 };
 </script>
