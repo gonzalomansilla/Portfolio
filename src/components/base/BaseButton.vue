@@ -1,5 +1,5 @@
 <template>
-  <button class="w-full md:w-auto px-8 py-2 tracking-wide font-light rounded-md shadow-md">
+  <button class="w-full md:w-auto px-12 py-2 tracking-wide font-light rounded-md shadow-md">
     <slot name="text"></slot>
   </button>
 </template>
