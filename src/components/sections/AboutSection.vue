@@ -8,29 +8,41 @@
           </div>
         </div>
 
-        <!-- Text -->
-        <div class="">
-          <h3 class="mb-2 text-xl font-light text-primary-50 capitalize">who am i?</h3>
-          <h2 class="mb-2 text-xl font-bold capitalize">i'm  john doe, a web developer and  visual ux/ui designer</h2>
-          <p class="pb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio
-            maiores, earum cupiditate ipsa recusandae pariatur aperiam enim
-            blanditiis animi iusto tempora aliquam reprehenderit eius autem.
-            Veniam odit minus rerum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            quidem delectus alias sit ipsum ducimus id, perspiciatis itaque
-            maiores commodi.
-          </p>
-        </div>
+        <div class="grid gap-8">
+          <div>
+            <h3 class="mb-2 text-xl font-light text-primary-50 capitalize">who am i?</h3>
+            <h2
+              class="mb-2 text-xl font-bold capitalize"
+            >i'm john doe, a web developer and visual ux/ui designer</h2>
+            <p class="pb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio
+              maiores, earum cupiditate ipsa recusandae pariatur aperiam enim
+              blanditiis animi iusto tempora aliquam reprehenderit eius autem.
+              Veniam odit minus rerum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+              quidem delectus alias sit ipsum ducimus id, perspiciatis itaque
+              maiores commodi.
+            </p>
+          </div>
 
-        <hr class="bg-gray-400 my-8">
+          <hr class="bg-gray-400" />
 
-        <!-- TODO More info -->
+          <div class="more-info__container grid gap-8">
+            <div class="info__labels grid gap-4">
+              <LabelInfo label-title="full name" label-value="john doe"></LabelInfo>
+              <LabelInfo label-title="age" label-value="23"></LabelInfo>
+              <LabelInfo label-title="email">
+                <template #special-text>
+                  <a class="text-primary-50" href="#">johndoe@example.com</a>
+                </template>
+              </LabelInfo>
+              <LabelInfo label-title="from" label-value="buenos aires, argentina"></LabelInfo>
+            </div>
 
-        <div class="about__more-info mb-12">
-          <BtnPrimary text="Dowload CV"></BtnPrimary>
+            <BtnPrimary class="self-end" text="Dowload CV"></BtnPrimary>
+          </div>
         </div>
       </div>
     </template>
@@ -40,12 +52,14 @@
 <script>
 import AppSection from "./../base/BaseSection";
 import BtnPrimary from "./../ui/buttons/Primary";
+import LabelInfo from "./../ui/LabelInfo";
 
 export default {
   name: "AboutSection",
   components: {
     AppSection,
-    BtnPrimary
+    BtnPrimary,
+    LabelInfo,
   },
 };
 </script>
@@ -55,29 +69,22 @@ export default {
   position: relative;
 }
 
-.img-perfil__container img{
+.img-perfil__container img {
   width: 200px;
   height: auto;
 }
 
-.img-perfil__container:before{
+.img-perfil__container:before {
   z-index: -1;
   width: calc(100% + 32px);
   height: calc(100% + 32px);
-  /* @include positioning(absolute, -16px, 50%, translateX(-50%)); */
 }
-
-// .about__more-info {
-//   display: flex;
-//   justify-self: right;
-// }
 
 /* Diseño */
 
-.img-perfil__container img{
+.img-perfil__container img {
   object-fit: cover;
   object-position: top;
-  /* box-shadow: $shadow-img; */
 }
 
 .img-perfil__container:before {
@@ -86,14 +93,17 @@ export default {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%);
 }
 
-.perfil__subtitle {
-   /* font-size: $text-size__subtitle; */
-   /* color: $color-secundary;
-   font-weight: $font-weight__medium; */
-   /* letter-spacing: $letter-spacing__normal; */
-}
+@screen md {
+  .more-info__container {
+    grid-template: 1fr / auto 1fr;
 
-.perfil__parraf {
-  /* color: $text-primary; */
+    & button {
+      justify-self: end;
+    }
+  }
+
+  .info__labels {
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
 }
 </style>
