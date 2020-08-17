@@ -1,10 +1,9 @@
 <template>
-  <a class="font-light bg-gray-400 rounded-full" 
+  <a
+    class="font-light bg-gray-400 rounded-full"
     :class="[this.getTheme, this.getSize]"
     href="#"
-  >
-    {{ text }}
-  </a>
+  >{{ text }}</a>
 </template>
 
 <script>
@@ -17,7 +16,7 @@ export default {
     },
     theme: {
       type: String,
-      validator: (theme) => ['blue', 'white'].includes(theme),
+      validator: (theme) => ["blue", "white"].includes(theme),
     },
     size: {
       type: String,
@@ -26,49 +25,51 @@ export default {
   },
   computed: {
     getTheme() {
-      let theme = 'theme--';
+      let theme = "theme--";
 
-      if(this.theme == 'blue')
-        theme += this.theme;
-      else if(this.theme == 'white')
-        theme += this.theme;
+      if (this.theme == "blue") theme += this.theme;
+      else if (this.theme == "white") theme += this.theme;
 
       return theme;
     },
     getSize() {
-      let size = 'size--';
+      let size = "size--";
 
-      if(this.size == 'small')
-        size += this.size;
-      else if(this.size == 'medium')
-        size += this.size;
+      if (this.size == "small") size += this.size;
+      else if (this.size == "medium") size += this.size;
 
-      return size
-    }
+      return size;
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
+a {
+  height: max-content;
+  width: max-content;
+}
+
 // Themes
 .theme--white {
-  background: theme('colors.white');
-  color: theme('colors.primary-50');
-  box-shadow: theme('boxShadow.default');
+  background: theme("colors.white");
+  color: theme("colors.primary-50");
+  box-shadow: theme("boxShadow.default");
 }
 
 .theme--blue {
-  background: theme('colors.primary-50');
-  color: theme('colors.white');
+  background: theme("colors.primary-50");
+  color: theme("colors.white");
 }
 
 // Sizes
 .size--small {
-  font-size: theme('fontSize.sm');
-  padding: theme('spacing.2') theme('spacing.3');
+  font-size: theme("fontSize.sm");
+  padding: theme("spacing.1") theme("spacing.4");
 }
 
 .size--medium {
-  padding: theme('spacing.2') theme('spacing.5');
+  font-size: theme("fontSize.lg");
+  padding: theme("spacing.1") theme("spacing.6");
 }
 </style>
