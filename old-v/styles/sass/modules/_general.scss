@@ -79,51 +79,6 @@
 }
 
 
-//Modulo: Label
-.labels {
-  //Utilizar width si hay un desborde de labels
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  height: auto;
-}
-
-.labels__label {
-  margin: 4px;
-}
-
-.label {
-  padding: 4px 16px;
-  padding-top: 6px;
-  /*Parche: desface de letra*/
-  width: auto;
-  font-weight: $font-weight__regular;
-  border-radius: $border-radius__label;
-}
-
-.label_size_normal {
-  height: 28px;
-}
-
-.label_size_small {
-  height: 24px;
-  font-weight: $font-weight__regular;
-  font-size: $text-size__small;
-}
-
-.label_theme_blue {
-  background-color: $color-secundary;
-}
-
-.label_theme_white {
-  background-color: white;
-
-  &>a {
-    // color: $color-tertiary;
-    color: $color-secundary;
-  }
-
-}
 
 //Modulo: Botones
 .button {
