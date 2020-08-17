@@ -5,19 +5,22 @@
 
     <div class="app-container font-body">
       <AboutSection></AboutSection>
+      <PortfolioSection></PortfolioSection>
     </div>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
-import AboutSection from "./components/sections/AboutSection";
+import AboutSection from "./components/sections/About";
+import PortfolioSection from "./components/sections/Portfolio";
 
 export default {
   name: 'App',
   components: {
     Header,
-    AboutSection
+    AboutSection,
+    PortfolioSection
   },
 };
 </script>
