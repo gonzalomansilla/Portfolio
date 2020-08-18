@@ -69,7 +69,7 @@ a {
 }
 
 .size--medium {
-  font-size: theme("fontSize.lg");
+  font-size: theme("fontSize.base");
   padding: theme("spacing.1") theme("spacing.6");
 }
 </style>
