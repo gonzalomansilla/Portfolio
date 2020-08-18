@@ -3,15 +3,13 @@
     <template #section-content>
       <section class="grid gap-8">
         <div class="flex gap-2 flex-wrap justify-center">
-          <!-- TODO Crear ciclo for -->
-          <ProyectTag theme="blue" size="small" text="JavaScript"></ProyectTag>
-          <ProyectTag theme="blue" size="small" text="Vue"></ProyectTag>
-          <ProyectTag theme="blue" size="small" text="c#"></ProyectTag>
-          <ProyectTag theme="blue" size="small" text=".NET Core"></ProyectTag>
-          <ProyectTag theme="blue" size="small" text="Entity Framework"></ProyectTag>
-          <ProyectTag theme="blue" size="small" text="Java"></ProyectTag>
-          <ProyectTag theme="blue" size="small" text="Spring Boot"></ProyectTag>
-          <ProyectTag theme="blue" size="small" text="SQL Server"></ProyectTag>
+          <ProyectTag
+            v-for="(tag, index) in proyectTags"
+            :key="index"
+            theme="blue"
+            size="small"
+            :text="tag"
+          ></ProyectTag>
         </div>
 
         <div class="proyects grid gap-4">
@@ -210,14 +208,26 @@
 
 <script>
 import BaseSection from "./../base/BaseSection";
-import ProyectTag from "./../ui/ProyectTag"
+import ProyectTag from "./../ui/ProyectTag";
 
 export default {
   name: "PortfolioSection",
   components: {
     BaseSection,
-    ProyectTag
+    ProyectTag,
   },
+  data: () => ({
+    proyectTags: [
+      "JavaScript",
+      "Vue",
+      "C#",
+      ".NET Core",
+      "Entity Framework",
+      "Java",
+      "Spring Boot",
+      "SQL Server",
+    ],
+  }),
 };
 </script>
 
@@ -249,7 +259,6 @@ export default {
   object-fit: cover;
   height: 100%;
 }
-
 
 // LAYOUT
 .portfolio__title {
