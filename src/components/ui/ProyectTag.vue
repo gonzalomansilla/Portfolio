@@ -54,7 +54,6 @@ a {
 .theme--white {
   background: theme("colors.white");
   color: theme("colors.primary-50");
-  box-shadow: theme("boxShadow.default");
 }
 
 .theme--blue {
@@ -65,6 +64,7 @@ a {
 // Sizes
 .size--small {
   font-size: theme("fontSize.sm");
+  font-weight: theme("fontWeight.normal");
   padding: theme("spacing.1") theme("spacing.4");
 }
 
