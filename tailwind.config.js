@@ -2,8 +2,9 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
-      screens: {
-        'ss': '320px'
+      opacity: {
+        '85': '0.85',
+        '90': '0.9',
       },
       colors: {
         'primary-40': 'hsl(219, 95%, 46%)',
@@ -15,8 +16,14 @@ module.exports = {
         'header': ['Jura', 'Georgia'],
         'body': ['Overpass', 'sans-serif']
       },
+      screens: {
+        'ss': '320px'
+      },
     },
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['focus', 'hover', 'active'],
+    display: ['responsive', 'hover']
+  },
   plugins: [],
 }
