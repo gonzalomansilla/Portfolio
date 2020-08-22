@@ -1,4 +1,7 @@
 module.exports = {
+  feature: {
+    removeDeprecatedGapUtilities: true
+  },
   purge: [],
   theme: {
     extend: {

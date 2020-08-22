@@ -10,7 +10,7 @@
   "dependencies": {
     "autoprefixer": "^9.8.5",
     "core-js": "^3.6.5",
-    "tailwindcss": "^1.6.1",
+    "tailwindcss": "^1.7.3",
     "vue": "^2.6.11"
   },
   "devDependencies": {
