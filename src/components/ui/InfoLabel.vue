@@ -1,5 +1,5 @@
 <template>
-  <p class="align-middle">
+  <p class="align-middle w-max-content">
     <span class="font-bold capitalize">{{ labelTitle }}: </span>
     <span class="pl-1 capitalize opacity-75">{{ labelValue }}</span>
     <slot name="special-text"></slot>
@@ -23,8 +23,4 @@ export default {
 }
 </script>
 
-<style scoped>
-p {
-  width: max-content;
-}
-</style>
+<style scoped></style>

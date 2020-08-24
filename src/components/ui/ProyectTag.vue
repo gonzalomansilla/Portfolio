@@ -1,6 +1,6 @@
 <template>
   <a
-    class="font-light bg-gray-400 rounded-full"
+    class="w-max-content font-light bg-gray-400 rounded-full"
     :class="[this.getTheme, this.getSize]"
     href="#"
   >{{ text }}</a>
@@ -47,7 +47,6 @@ export default {
 <style lang="scss" scoped>
 a {
   height: max-content;
-  width: max-content;
 }
 
 // Themes

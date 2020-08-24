@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{'text-gray-900': darkIcons, 'text-white': !darkIcons}"
-    class="icons-container flex gap-4 text-3xl"
+    class="icons-container w-max-content flex gap-4 text-3xl"
   >
     <i class="fab fa-twitter p-2"></i>
     <a href="https://www.linkedin.com/in/gonzalomansilla" target="_blank" rel="external">
@@ -32,6 +32,5 @@ export default {
 <style lang="scss" scoped>
 .icons-container {
   height: max-content;
-  width: max-content;
 }
 </style>
