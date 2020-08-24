@@ -1,13 +1,11 @@
 <template>
-  <div class="proyect relative h-64 shadow-sm rounded-md overflow-hidden border border-gray-200">
-    <div class="proyect__img-container">
-      <img
-        :src="proyect.imageUrl"
-        loading="lazy"
-        let="Proyect image"
-        class="proyect__img object-cover"
-      />
-    </div>
+  <div class="proyect proyect-scale relative shadow-sm rounded-md overflow-hidden border border-gray-200">
+    <img
+      :src="proyect.imageUrl"
+      loading="lazy"
+      let="Proyect image"
+      class="absolute inset-0 object-cover"
+    />
 
     <div class="proyect__details md:hidden absolute inset-x-0 bottom-0 h-12 sm:h-16 sm:text-lg w-full bg-primary-50 opacity-85">
       <div class="w-full h-full grid gap-4 grid-cols-2 items-center p-3 font-light text-white">
@@ -67,44 +65,10 @@ export default {
   }
 }
 
-
-// .proyect__details-hover {
-//   opacity: 0;
-//   transition: all 0.6s;
-// }
-
-// LAYOUT
-
-// Patron de diseño
-.proyect__img-container {
-  position: relative;
+.proyect-scale {
+  // Scale
   padding-top: 56.25%;
-  width: 100%;
+  width: theme('width.full');
   overflow: hidden;
 }
-
-.proyect__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-// .details {
-//   display: grid;
-//   grid-template-columns: 1fr auto;
-//   grid-template-rows: 1fr 1fr 1fr;
-//   grid-row-gap: 32px;
-//   grid-column-gap: 32px;
-//   grid-template-areas:
-//     "title title"
-//     "description description"
-//     "labels link-github";
-
-//   height: 100%;
-//   width: 100%;
-//   // height: calc(100% - 32px);
-//   // width: calc(100% - 32px);
-//   padding: 16px;
-// }
 </style>
