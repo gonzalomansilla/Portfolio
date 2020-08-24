@@ -10,9 +10,9 @@
     </div>
 
     <div class="proyect__details md:hidden absolute inset-x-0 bottom-0 h-12 sm:h-16 sm:text-lg w-full bg-primary-50 opacity-85">
-      <div class="w-full h-full flex gap-4 justify-between items-center p-3 font-light text-white">
-        <p>{{ proyect.title }}</p>
-        <a :href="proyect.repositoryUrl">GitHub</a>
+      <div class="w-full h-full grid gap-4 grid-cols-2 items-center p-3 font-light text-white">
+        <p class="font-normal tracking-wider truncate" >{{ proyect.title }}</p>
+        <a class="justify-self-end" :href="proyect.repositoryUrl">View proyect</a>
       </div>
     </div>
 
