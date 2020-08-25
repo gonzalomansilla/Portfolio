@@ -51,7 +51,7 @@ export default {
   &:before {
     content: "";
     background-color: theme("colors.primary-50");
-    opacity: theme("opacity.75");
+    opacity: theme("opacity.85");
     clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
   }
 }
