@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <!-- Header -->
     <Header></Header>
 
-    <div class="app-container font-body">
+    <main class="app-container font-body text-gray-dark">
       <AboutSection></AboutSection>
+      
       <PortfolioSection></PortfolioSection>
-    </div>
+    </main>
   </div>
 </template>
 
