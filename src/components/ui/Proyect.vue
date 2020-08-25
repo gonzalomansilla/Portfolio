@@ -1,5 +1,5 @@
 <template>
-  <div class="proyect proyect-scale relative shadow-sm rounded-md overflow-hidden border border-gray-200">
+  <div class="proyect proyect-scale relative shadow-md rounded-md overflow-hidden">
     <img
       :src="proyect.imageUrl"
       loading="lazy"
@@ -15,7 +15,9 @@
     </div>
 
     <div class="my__hover hidden md:hover:block absolute inset-0 bg-primary-50 bg-opacity-90">
+      <!-- TODO Padding segun screen -->
       <div class="w-full h-full grid grid-cols-1 items-center p-4 text-white">
+        <!-- TODO Size text segun screen -->
         <a :href="proyect.repositoryUrl" class="self-start text-lg text-center tracking-wider">{{ proyect.title }}</a>
 
         <p class="text-center font-light tracking-wider">{{ proyect.descript }}</p>
