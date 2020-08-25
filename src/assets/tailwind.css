@@ -2,14 +2,6 @@
 
 @tailwind components;
 
-.w-max-content {
-  width: max-content;
-}
-
-.justify-self-end {
-  justify-self: end;
-}
-
 @screen ss {
   .app-container {
     padding: 0 theme('padding.4');
@@ -35,3 +27,11 @@
 }
 
 @tailwind utilities;
+
+.w-max-content {
+  width: max-content;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
