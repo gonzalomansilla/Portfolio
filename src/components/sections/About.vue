@@ -1,7 +1,7 @@
 <template>
   <BaseSection section-title="about me">
     <template #section-content>
-      <div class="content">
+      <div>
         <!-- TODO Imagen de perfil -->
         <div class="about__img-perfil img-perfil">
           <div class="img-perfil__container hidden">

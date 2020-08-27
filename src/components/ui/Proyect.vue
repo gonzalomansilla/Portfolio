@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO shadow al realizar hover en md -->
   <div class="proyect proyect-scale relative shadow-md rounded-md overflow-hidden">
     <img
       :src="proyect.imageUrl"
