@@ -1,5 +1,5 @@
 <template>
-  <textarea class="pl-4 w-full h-32 font-normal capitalize rounded-md shadow-md focus:outline-none" :placeholder="placeholder"></textarea>
+  <textarea class="p-2 w-full h-32 font-normal capitalize rounded-md shadow-md focus:outline-none" :placeholder="placeholder"></textarea>
 </template>
 
 <script>
