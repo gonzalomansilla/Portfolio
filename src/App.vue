@@ -7,6 +7,8 @@
       
       <PortfolioSection></PortfolioSection>
     </main>
+    
+    <ContactSection></ContactSection>
   </div>
 </template>
 
@@ -14,13 +16,15 @@
 import Header from "./components/Header";
 import AboutSection from "./components/sections/About";
 import PortfolioSection from "./components/sections/Portfolio";
+import ContactSection from "./components/sections/Contact";
 
 export default {
   name: 'App',
   components: {
     Header,
     AboutSection,
-    PortfolioSection
+    PortfolioSection,
+    ContactSection
   },
 };
 </script>
