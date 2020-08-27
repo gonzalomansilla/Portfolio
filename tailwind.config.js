@@ -15,6 +15,11 @@ module.exports = {
         'primary-60': 'hsl(219, 98%, 60%)',
         'gray-dark': 'hsl(0, 0%, 21%)'
       },
+      fontSize: {
+        'base': ['16px', {
+          letterSpacing: '0.025em',
+        }],
+      },
       fontFamily: {
         'header': ['Jura', 'Georgia'],
         'body': ['Overpass', 'sans-serif']
