@@ -32,6 +32,10 @@
   width: max-content;
 }
 
+.h-max-content {
+  height: max-content;
+}
+
 .justify-self-end {
   justify-self: end;
 }
