@@ -28,6 +28,12 @@
 
 @tailwind utilities;
 
+/* Layout */
+.grid-rows-content {
+  grid-auto-rows: max-content;
+}
+
+/* Dimensiones */
 .w-max-content {
   width: max-content;
 }
@@ -36,6 +42,16 @@
   height: max-content;
 }
 
+.full-max-content {
+  width: max-content;
+  height: max-content;
+}
+
+/* Posisionamiento */
 .justify-self-end {
   justify-self: end;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
