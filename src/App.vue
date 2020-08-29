@@ -2,13 +2,15 @@
   <div id="app">
     <Header></Header>
 
-    <main class="app-container font-body text-gray-dark">
-      <AboutSection></AboutSection>
+    <main class="font-body text-gray-dark">
+      <div class="app-container">
+        <AboutSection></AboutSection>
+        
+        <PortfolioSection></PortfolioSection>
+      </div>
       
-      <PortfolioSection></PortfolioSection>
+      <ContactSection></ContactSection>
     </main>
-    
-    <ContactSection></ContactSection>
   </div>
 </template>
 
