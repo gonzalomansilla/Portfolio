@@ -1,6 +1,6 @@
 <template>
-  <section class="pt-32">
-    <h2 class="section__title w-max-content mx-auto mb-12 text-3xl text-center uppercase">
+  <section class="grid grid-cols-1 justify-center pt-32 gap-y-12">
+    <h2 class="section__title relative w-max-content mx-auto text-3xl uppercase leading-none">
       {{ sectionTitle }}
     </h2>
 
@@ -24,15 +24,13 @@ export default {
 
 <style lang="scss" scoped>
 .section__title {
-  position: relative;
-
   &::after {
     content: "";
     position: absolute;
     display: inline-block;
     width: 2px;
     height: theme('spacing.3');
-    top: 45%;
+    top: 40%;
     transform: translateY(-50%);
     left: theme('space.-3');
     background: theme('colors.primary-50');
@@ -44,7 +42,7 @@ export default {
     display: inline-block;
     width: 2px;
     height: theme('spacing.3');
-    top: 45%;
+    top: 40%;
     transform: translateY(-50%);
     right: theme('space.-3');
     background: theme('colors.primary-50');
