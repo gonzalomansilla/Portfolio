@@ -3,9 +3,8 @@
     <Header></Header>
 
     <main class="font-body text-gray-dark">
-      <div class="app-container">
+      <div class="app-section-padding-x">
         <AboutSection></AboutSection>
-        
         <PortfolioSection></PortfolioSection>
       </div>
       

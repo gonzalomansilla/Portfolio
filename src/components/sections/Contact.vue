@@ -1,7 +1,7 @@
 <template>
   <BaseSection section-title="contact me">
     <template #section-content>
-      <div class="relative px-4 py-12">
+      <div class="relative py-12 app-section-padding-x">
         <div class="contact-bg absolute inset-0"></div>
 
         <div class="grid grid-cols-1 grid-rows-content gap-y-12 py-8">

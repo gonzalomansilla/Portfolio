@@ -1,5 +1,5 @@
 <template>
-  <footer class="grid gap-y-4 justify-items-center relative p-4 text-white text-center">
+  <footer class="grid gap-y-4 justify-items-center relative py-4 app-section-padding-x text-white text-center">
     <div class="footer-bg absolute inset-x-0"></div>
     <span class="text-sm font-light">Copyright © 2020 - Personal Resume/CV/Portfolio HTML Template</span>
     <IconsList></IconsList>

@@ -4,29 +4,28 @@
 
 .app-input {
   @apply p-2 w-full h-12 text-base text-gray-700 font-light capitalize rounded-md shadow-md;
-
 }
 
 @screen ss {
-  .app-container {
+  .app-section-padding-x {
     padding: 0 theme('padding.4');
   }
 }
 
 @screen md {
-  .app-container {
+  .app-section-padding-x {
      padding: 0 theme('padding.8');
   }
 }
 
 @screen lg {
-  .app-container {
+  .app-section-padding-x {
      padding: 0 theme('padding.16');
   }
 }
 
 @screen xl {
-  .app-container {
+  .app-section-padding-x {
      padding: 0 theme('padding.24');
   }
 }
