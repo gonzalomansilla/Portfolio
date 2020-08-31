@@ -10,6 +10,7 @@
       </div>
       
       <ContactSection></ContactSection>
+      <FooterSection></FooterSection>
     </main>
   </div>
 </template>
@@ -19,6 +20,7 @@ import Header from "./components/Header";
 import AboutSection from "./components/sections/About";
 import PortfolioSection from "./components/sections/Portfolio";
 import ContactSection from "./components/sections/Contact";
+import FooterSection from "./components/sections/Footer";
 
 export default {
   name: 'App',
@@ -26,7 +28,8 @@ export default {
     Header,
     AboutSection,
     PortfolioSection,
-    ContactSection
+    ContactSection,
+    FooterSection
   },
 };
 </script>
