@@ -8,20 +8,20 @@
       class="absolute inset-0 object-cover"
     />
 
-    <div class="proyect__details md:hidden absolute inset-x-0 bottom-0 h-12 sm:h-16 sm:text-lg w-full bg-primary-50 opacity-85">
+    <div class="proyect__details lg:hidden absolute inset-x-0 bottom-0 h-12 sm:h-16  sm:text-lg w-full bg-primary-50 opacity-85">
       <div class="w-full h-full grid gap-x-2 grid-cols-2 items-center p-3 text-base font-light text-white">
         <p class="tracking-wider truncate" >{{ proyect.title }}</p>
-        <a class="justify-self-end " :href="proyect.repositoryUrl">View proyect</a>
+        <a class="justify-self-end capitalize" :href="proyect.repositoryUrl">View proyect</a>
       </div>
     </div>
 
-    <div class="my__hover hidden md:hover:block absolute inset-0 bg-primary-50 bg-opacity-90">
+    <div class="my__hover hidden absolute inset-0 bg-primary-50 bg-opacity-90">
       <!-- TODO Padding segun screen -->
       <div class="w-full h-full grid grid-cols-1 items-center p-4 text-white">
         <!-- TODO Size text segun screen -->
         <a :href="proyect.repositoryUrl" class="self-start text-lg text-center tracking-wider">{{ proyect.title }}</a>
 
-        <p class="text-center font-light tracking-wider">{{ proyect.descript }}</p>
+        <p class="text-base text-center font-light">{{ proyect.descript }}</p>
 
         <div class="flex justify-between self-end">
           <div class="flex gap-2 ">
@@ -34,7 +34,7 @@
             ></ProyectTag>
           </div>
 
-          <a :href="proyect.repositoryUrl" class="self-end font-light">View proyect</a>
+          <a :href="proyect.repositoryUrl" class="self-end font-light capitalize">View proyect</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@screen md {
+@screen lg {
   .proyect:hover .my__hover{
     display: block;
   }
