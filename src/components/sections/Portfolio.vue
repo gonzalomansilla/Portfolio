@@ -54,7 +54,7 @@ export default {
         imageUrl: "/img/proyect-img.jpg",
         descript:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia dolorum voluptas, amet consectetur adipisicing elit.",
-        tecnologies: ["Vue", "C#", "SQL Server"],
+        tecnologies: ["Vue", "C#"],
         repositoryUrl: "https://github.com/NewtonGrav",
       },
       {
@@ -86,7 +86,7 @@ export default {
         imageUrl: "/img/proyect-img6.jpg",
         descript:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia dolorum voluptas, amet consectetur adipisicing elit.",
-        tecnologies: ["Vue", "C#", ".NET Core"],
+        tecnologies: ["Vue", ".NET Core"],
         repositoryUrl: "https://github.com/NewtonGrav",
       },
       {
