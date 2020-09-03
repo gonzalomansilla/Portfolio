@@ -1,5 +1,5 @@
 <template>
-  <textarea class="app-input focus:outline-none" :placeholder="placeholder"></textarea>
+  <textarea class="h-24 app-input focus:outline-none" :placeholder="placeholder"></textarea>
 </template>
 
 <script>
