@@ -11,9 +11,9 @@
 
         <div class="grid gap-6">
           <div class="grid gap-3">
-            <h3 class="text-xl font-light text-primary-50 capitalize">who am i?</h3>
+            <h3 class="text-xl md:text-2xl font-light text-primary-50 capitalize">who am i?</h3>
             <h2
-              class="text-xl font-bold capitalize"
+              class="text-lg  md:text-xl font-bold capitalize"
             >i'm john doe, a web developer and visual ux/ui designer</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio
