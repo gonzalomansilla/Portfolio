@@ -4,18 +4,19 @@
       <div class="relative py-12 app-section-padding-x">
         <div class="contact-bg absolute inset-0"></div>
 
-        <div class="grid grid-cols-1 grid-rows-content gap-y-12 py-8">
-          <div class="grid gap-y-4">
+        <div class="contact__inner grid grid-cols-1 grid-rows-content gap-12 py-8">
+          <div class="grid grid-cols-1 gap-y-4">
             <div class="grid gap-y-2">
               <TextBox placeholder="full name"></TextBox>
               <TextBox placeholder="email"></TextBox>
               <TextArea placeholder="Message"></TextArea>
             </div>
 
+            <!-- TODO Responsive en md (Observer)-->
             <BtnSecundary text="Send Message"></BtnSecundary>
           </div>
 
-          <div class="contact-options grid grid-rows-content justify-items-center gap-y-6">
+          <div class="contact-options grid grid-rows-content justify-items-center gap-6">
             <InfoIcon faIcon="fa-phone" text="(+54) 11-12345678" ></InfoIcon>
             <InfoIcon faIcon="fa-inbox" text="johondoe@example.com" ></InfoIcon>
             <InfoIcon faIcon="fa-location-arrow" text="Buenos Aires, Argentina" ></InfoIcon>
@@ -53,10 +54,13 @@ export default {
 }
 
 @screen md {
-  .contact-options {
-    grid-template-columns: repeat(3, minmax(0, max-content));
-    grid-gap: theme('gap.6');
-    justify-content: center;
+  .contact__inner {
+    grid-template-columns: 2fr 1fr;
+
   }
-  }
+  // .contact-options {
+  //   grid-gap: theme('gap.6');
+  //   justify-content: center;
+  // }
+}
 </style>
