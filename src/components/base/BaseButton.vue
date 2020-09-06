@@ -1,5 +1,5 @@
 <template>
-  <button class="w-full md:w-auto px-12 py-2 tracking-wider font-medium rounded-md shadow-md hover:shadow focus:outline-none">
+  <button class="w-full md:w-max-content px-12 py-2 tracking-wider font-medium rounded-md shadow-md hover:shadow focus:outline-none">
     <slot name="text"></slot>
   </button>
 </template>
