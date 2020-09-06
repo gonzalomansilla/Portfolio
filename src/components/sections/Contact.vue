@@ -5,11 +5,11 @@
         <div class="contact-bg absolute inset-0"></div>
 
         <div class="contact__inner grid grid-cols-1 grid-rows-content gap-12 py-8">
-          <div class="grid grid-cols-1 gap-y-4">
-            <div class="grid gap-y-2">
+          <div class="grid gap-y-4">
+            <div class="contact__form grid md:grid-cols-2 gap-2">
               <TextBox placeholder="full name"></TextBox>
               <TextBox placeholder="email"></TextBox>
-              <TextArea placeholder="Message"></TextArea>
+              <TextArea class="md:col-span-2" placeholder="Message"></TextArea>
             </div>
 
             <!-- TODO Responsive en md (Observer)-->
@@ -56,11 +56,10 @@ export default {
 @screen md {
   .contact__inner {
     grid-template-columns: 2fr 1fr;
-
   }
-  // .contact-options {
-  //   grid-gap: theme('gap.6');
-  //   justify-content: center;
-  // }
+
+  .contact__form {
+    grid-template-rows: max-content 1fr;
+  }
 }
 </style>
