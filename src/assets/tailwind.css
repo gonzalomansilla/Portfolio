@@ -3,7 +3,11 @@
 @tailwind components;
 
 .app-input {
-  @apply p-2 w-full h-12 text-base text-gray-700 font-light capitalize rounded-md shadow-md;
+  @apply w-full h-12;
+  @apply p-2;
+  @apply text-base text-gray-700 font-light capitalize rounded-md shadow-md;
+
+  padding: theme('spacing.4');
 }
 
 @screen ss {
