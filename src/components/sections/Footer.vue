@@ -23,6 +23,6 @@ export default {
   top: theme("space.-12");
   bottom: 0;
   clip-path: polygon(0 48px, 100% 0, 100% 100%, 0 100%);
-  background-color: theme("colors.gray-dark");
+  background-color: theme("colors.dark");
 }
 </style>
