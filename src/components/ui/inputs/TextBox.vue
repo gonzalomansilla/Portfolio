@@ -1,5 +1,5 @@
 <template>
-  <input type="text" class="app-input focus:outline-none" :placeholder="placeholder" />
+  <input type="text" class="app-input xl:h-14 focus:outline-none" :placeholder="placeholder" />
 </template>
 
 <script>
