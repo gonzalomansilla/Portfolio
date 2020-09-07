@@ -13,7 +13,8 @@ module.exports = {
         'primary-40': 'hsl(219, 95%, 46%)',
         'primary-50': 'hsl(219, 95%, 55%)',
         'primary-60': 'hsl(219, 98%, 60%)',
-        'gray-dark': 'hsl(0, 0%, 21%)'
+        'gray-dark': 'hsl(0, 0%, 21%)',
+        'dark': 'hsl(0, 0%, 16%)'
       },
       fontSize: {
         'base': ['16px', {
@@ -25,7 +26,8 @@ module.exports = {
         'body': ['Overpass', 'sans-serif']
       },
       screens: {
-        'ss': '320px'
+        'ss': '320px',
+        '2xl': '1440px'
       },
     },
   },
