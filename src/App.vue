@@ -2,7 +2,7 @@
   <div id="app">
     <Header></Header>
 
-    <main class="max-w-screen-xl mx-auto font-body text-gray-dark">
+    <main class="max-w-screen-2xl mx-auto font-body text-gray-dark">
       <div class="app-section-padding-x">
         <AboutSection></AboutSection>
         <PortfolioSection></PortfolioSection>
