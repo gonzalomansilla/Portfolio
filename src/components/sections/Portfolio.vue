@@ -16,7 +16,6 @@
           <Proyect v-for="(proyect, index) in proyects" :key="index" :proyect="proyect"></Proyect>
         </div>
 
-        <!-- TODO Size segun screen -->
         <p class="text-2xl text-center">
           <i class="fas fa-chevron-down p-2 animate-pulse"></i>
         </p>

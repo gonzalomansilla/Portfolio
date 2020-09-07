@@ -4,6 +4,7 @@
       <div class="relative py-12">
         <div class="contact-bg absolute inset-0"></div>
 
+        <!-- TODO Style: Espaciado entre formulario y contactos -->
         <div class="contact__inner app-section-padding-x grid grid-cols-1 grid-rows-content gap-12 py-8">
           <div class="grid gap-y-4">
             <div class="contact__form grid md:grid-cols-2 gap-2">
