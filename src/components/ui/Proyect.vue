@@ -17,11 +17,11 @@
 
     <div class="my__hover hidden absolute inset-0 bg-primary-50 bg-opacity-90">
       <!-- TODO Padding segun screen -->
-      <div class="w-full h-full grid grid-cols-1 items-center p-4 text-white">
+      <div class="w-full h-full grid grid-cols-1 items-center p-4 lg:p-8 text-white">
         <!-- TODO Size text segun screen -->
-        <a :href="proyect.repositoryUrl" class="self-start text-lg text-center tracking-wider">{{ proyect.title }}</a>
+        <a :href="proyect.repositoryUrl" class="self-start text-lg xl:text-xl text-center tracking-wider">{{ proyect.title }}</a>
 
-        <p class="text-base text-center font-light">{{ proyect.descript }}</p>
+        <p class="text-base xl:text-lg text-center font-light">{{ proyect.descript }}</p>
 
         <div class="flex justify-between self-end">
           <div class="flex gap-2 ">
