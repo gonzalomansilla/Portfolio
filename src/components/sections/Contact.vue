@@ -13,7 +13,6 @@
               <TextArea class="md:col-span-2" placeholder="Message"></TextArea>
             </div>
 
-            <!-- TODO Responsive en md (Observer)-->
             <BtnSecundary text="Send Message"></BtnSecundary>
           </div>
 
