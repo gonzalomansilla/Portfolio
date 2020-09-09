@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-rows-2 gap-y-2 justify-items-center full-max-content text-white">
+  <div class="info-icons grid grid-rows-2 gap-y-2 gap-x-4 justify-items-center  full-max-content text-white">
     <i class="fas icon text-xl" :class="faIcon"></i>
     <span class="text-base font-light">{{ text }}</span>
   </div>
@@ -22,4 +22,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@screen md {
+  .info-icons {
+    grid-template-rows: 1fr;
+    grid-template-columns: max-content 1fr;
+  }
+}
 </style>

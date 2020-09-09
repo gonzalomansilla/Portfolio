@@ -4,7 +4,6 @@
       <div class="relative py-12">
         <div class="contact-bg absolute inset-0"></div>
 
-        <!-- TODO Style: Espaciado entre formulario y contactos -->
         <div class="contact__inner app-section-padding-x grid grid-cols-1 grid-rows-content gap-12 py-8">
           <div class="grid gap-y-4">
             <div class="contact__form grid md:grid-cols-2 gap-2">
@@ -16,7 +15,7 @@
             <BtnSecundary text="Send Message"></BtnSecundary>
           </div>
 
-          <div class="grid grid-rows-content justify-items-center gap-6">
+          <div class="info-icons-container grid grid-rows-content justify-items-center gap-6">
             <InfoIcon faIcon="fa-phone" text="(+54) 11-12345678" ></InfoIcon>
             <InfoIcon faIcon="fa-inbox" text="johondoe@example.com" ></InfoIcon>
             <InfoIcon faIcon="fa-location-arrow" text="Buenos Aires, Argentina" ></InfoIcon>
@@ -60,6 +59,11 @@ export default {
 
   .contact__form {
     grid-template-rows: max-content 1fr;
+  }
+
+  .info-icons-container {
+    justify-items: start;
+    align-content: center;
   }
 }
 </style>
