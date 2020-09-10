@@ -4,7 +4,7 @@
       <div class="relative py-12">
         <div class="contact-bg absolute inset-0"></div>
 
-        <div class="contact__inner app-section-padding-x grid grid-cols-1 grid-rows-content gap-12 py-8">
+        <div class="contact app-section-padding-x grid grid-cols-1 grid-rows-content gap-12 py-8">
           <div class="grid gap-y-4">
             <div class="contact__form grid md:grid-cols-2 gap-2">
               <TextBox placeholder="full name"></TextBox>
@@ -15,7 +15,8 @@
             <BtnSecundary text="Send Message"></BtnSecundary>
           </div>
 
-          <div class="info-icons-container grid grid-rows-content justify-items-center gap-6">
+          <!-- TODO style fix: Agregar div vacio del alto del boton para posisiconar los contactos centrado al formulario -->
+          <div class="info-icons-container grid grid-rows-content  justify-items-center gap-6 md:gap-12">
             <InfoIcon faIcon="fa-phone" text="(+54) 11-12345678" ></InfoIcon>
             <InfoIcon faIcon="fa-inbox" text="johondoe@example.com" ></InfoIcon>
             <InfoIcon faIcon="fa-location-arrow" text="Buenos Aires, Argentina" ></InfoIcon>
@@ -53,7 +54,7 @@ export default {
 }
 
 @screen md {
-  .contact__inner {
+  .contact {
     grid-template-columns: 2fr 1fr;
   }
 
@@ -61,9 +62,12 @@ export default {
     grid-template-rows: max-content 1fr;
   }
 
+  // Alinear hacia derecha de forma lineals
   .info-icons-container {
     justify-items: start;
     align-content: center;
+    width: max-content;
+    justify-self: end;
   }
 }
 </style>
