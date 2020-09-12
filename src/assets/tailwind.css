@@ -1,0 +1,65 @@
+@tailwind base;
+
+@tailwind components;
+
+.app-input {
+  @apply w-full h-12;
+  @apply p-2;
+  @apply text-base text-gray-700 font-light capitalize rounded-md shadow-md;
+
+  padding: theme('spacing.4');
+}
+
+@screen ss {
+  .app-section-padding-x {
+    padding: 0 theme('padding.4');
+  }
+}
+
+@screen md {
+  .app-section-padding-x {
+     padding: 0 theme('padding.8');
+  }
+}
+
+@screen lg {
+  .app-section-padding-x {
+     padding: 0 theme('padding.16');
+  }
+}
+
+@screen xl {
+  .app-section-padding-x {
+     padding: 0 theme('padding.24');
+  }
+}
+
+@tailwind utilities;
+
+/* Layout */
+.grid-rows-content {
+  grid-auto-rows: max-content;
+}
+
+/* Dimensiones */
+.w-max-content {
+  width: max-content;
+}
+
+.h-max-content {
+  height: max-content;
+}
+
+.full-max-content {
+  width: max-content;
+  height: max-content;
+}
+
+/* Posisionamiento */
+.justify-self-end {
+  justify-self: end;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
