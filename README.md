@@ -9,8 +9,9 @@ Se utilizó metodologías que hacían al proyecto escalable y fácil de mantener
 
 Para dicha migración se opto por *Vue.js* como framework JS y *Tailwind* para el CSS aplicando un diseño *responsive*.
 
+[Mobile](https://i.imgur.com/mZvVj7u.png) | [Tablet](https://i.imgur.com/gK1kQfJ.png)
 <img 
-src="https://i.imgur.com/cCo2MiQ.png"
+src="https://i.imgur.com/UXgULZ8.png"
 alt="Web"
 title="Web" 
 />
