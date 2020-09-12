@@ -1,12 +1,9 @@
 <template>
   <BaseSection section-title="about me">
     <template #section-content>
-      <div>
-        <!-- TODO Imagen de perfil -->
-        <div class="about__img-perfil img-perfil">
-          <div class="img-perfil__container hidden">
-            <img src="img/optimized/perfil.jpg" alt="perfil_photo" />
-          </div>
+      <div class="about-container lg:grid lg:gap-x-10">
+        <div class="hidden lg:block w-full">
+          <img src="/img/perfil.png" alt="Foto de perfil" />
         </div>
 
         <div class="grid gap-6">
@@ -65,34 +62,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.img-perfil__container {
-  position: relative;
-}
-
-.img-perfil__container img {
-  width: 200px;
-  height: auto;
-}
-
-.img-perfil__container:before {
-  z-index: -1;
-  width: calc(100% + 32px);
-  height: calc(100% + 32px);
-}
-
-/* Diseño */
-
-.img-perfil__container img {
-  object-fit: cover;
-  object-position: top;
-}
-
-.img-perfil__container:before {
-  content: "";
-  /* background: $color-secundary; */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%);
-}
-
 @screen md {
   .more-info__container {
     grid-template: 1fr / auto 1fr;
@@ -104,6 +73,12 @@ export default {
 
   .info__labels {
     grid-template: 1fr 1fr / 1fr 1fr;
+  }
+}
+
+@screen lg {
+  .about-container {
+    grid-template-columns: 20% 1fr;
   }
 }
 </style>
