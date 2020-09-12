@@ -29,12 +29,12 @@
           <div class="more-info__container grid gap-8">
             <div class="info__labels grid gap-2 md:gap-4 items-end">
               <InfoLabel label-title="full name" label-value="john doe"></InfoLabel>
-              <InfoLabel label-title="age" label-value="23"></InfoLabel>
               <InfoLabel label-title="email">
                 <template #special-text>
                   <a class="text-primary-50" href="#">johndoe@example.com</a>
                 </template>
               </InfoLabel>
+              <InfoLabel label-title="age" label-value="23"></InfoLabel>
               <InfoLabel label-title="from" label-value="buenos aires, argentina"></InfoLabel>
             </div>
 
@@ -73,6 +73,7 @@ export default {
 
   .info__labels {
     grid-template: 1fr 1fr / 1fr 1fr;
+    justify-self: start;
   }
 }
 
