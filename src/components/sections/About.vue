@@ -2,7 +2,7 @@
   <BaseSection section-title="about me">
     <template #section-content>
       <div class="about-container lg:grid lg:gap-x-10">
-        <div class="hidden lg:block w-full">
+        <div class="hidden lg:block w-full my-auto">
           <img src="/img/perfil.png" alt="Foto de perfil" />
         </div>
 
@@ -27,7 +27,7 @@
           <hr class="bg-gray-400" />
 
           <div class="more-info__container grid gap-8">
-            <div class="info__labels grid gap-2 md:gap-4">
+            <div class="info__labels grid gap-2 md:gap-4 items-end">
               <InfoLabel label-title="full name" label-value="john doe"></InfoLabel>
               <InfoLabel label-title="age" label-value="23"></InfoLabel>
               <InfoLabel label-title="email">
@@ -38,7 +38,7 @@
               <InfoLabel label-title="from" label-value="buenos aires, argentina"></InfoLabel>
             </div>
 
-            <BtnPrimary class="self-end" text="Dowload CV"></BtnPrimary>
+            <BtnPrimary class="self-end lg:mb-2" text="Dowload CV"></BtnPrimary>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ export default {
 <style lang="scss" scoped>
 @screen md {
   .more-info__container {
-    grid-template: 1fr / auto 1fr;
+    grid-template: max-content / 1fr max-content;
 
     & button {
       justify-self: end;
