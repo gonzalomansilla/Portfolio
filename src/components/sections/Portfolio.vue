@@ -13,6 +13,7 @@
         </div>
 
         <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
+          <!-- TODO feat: Ocultar proyectos que NO coninciden con el tag seleccionado -->
           <Proyect v-for="(proyect, index) in proyects" :key="index" :proyect="proyect"></Proyect>
         </div>
 
