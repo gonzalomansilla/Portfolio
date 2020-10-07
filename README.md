@@ -1,9 +1,9 @@
 # Porfolio
 
-> Este es un **update** del primer portfolio realizado totalmente estatico hecho sin ninguna libreria o framework y sin aplicar *responsive design*
+> Este es un **update** del primer portfolio realizado totalmente estático hecho sin ninguna librería o framework y sin aplicar *responsive design*
 
 
-**Para ver la primer version revisar la rama `first-development`**
+**Para ver la primera versiòn revisar la rama `first-development`**
 
 Con este proyecto decidí entrar al mundo del desarrollo WEB de forma autodidacta, por lo que es el primero que realice (y diseñe).
 
