@@ -9,12 +9,16 @@
             theme="blue"
             :size="isScreenXL ? 'medium' : 'small'"
             :text="tag"
+            @selected-tag="showSelectedProyects"
           ></ProyectTag>
         </div>
 
         <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
-          <!-- TODO feat: Ocultar proyectos que NO coninciden con el tag seleccionado -->
-          <Proyect v-for="(proyect, index) in proyects" :key="index" :proyect="proyect"></Proyect>
+          <Proyect
+            v-for="(proyect, index) in filteredProjects"
+            :key="index"
+            :proyect="proyect"
+          ></Proyect>
         </div>
 
         <p class="mx-auto w-max-content text-2xl text-center cursor-pointer">
@@ -39,16 +43,17 @@ export default {
   },
   data: function () {
     return {
+      selectedTag: "",
+      filteredProjects: [],
       isScreenXL: false,
       proyectTags: [
+        "All",
         "JavaScript",
         "Vue",
         "C#",
         ".NET Core",
-        "Entity Framework",
         "Java",
-        "Spring Boot",
-        "SQL Server",
+        "Spring Boot"
       ],
       proyects: [
         {
@@ -102,7 +107,9 @@ export default {
       ],
     };
   },
-  mounted () {
+  mounted() {
+    this.filteredProjects = this.proyects;
+
     const mediaQueryXL = window.matchMedia("(min-width: 1280px)");
 
     mediaQueryXL.addListener(this.machScreen);
@@ -110,10 +117,24 @@ export default {
     this.machScreen(mediaQueryXL);
   },
   methods: {
-    machScreen (e) {
-      if (e.matches) this.isScreenXL = true
-      else this.isScreenXL = false
-    }
+    machScreen(e) {
+      if (e.matches) this.isScreenXL = true;
+      else this.isScreenXL = false;
+    },
+    showSelectedProyects(tag) {
+      this.selectedTag = tag;
+      
+      if (tag === "All") {
+        this.filteredProjects = this.proyects
+        return;
+      }
+
+      this.filteredProjects = this.proyects.filter((proyect) => {
+        let mached = proyect.tecnologies.filter((tag) => tag === this.selectedTag)
+        return mached.length > 0
+      }
+      );
+    },
   },
 };
 </script>

@@ -1,8 +1,8 @@
 <template>
   <a
-    class="w-max-content font-light bg-gray-400 rounded-full"
+    class="w-max-content font-light bg-gray-400 rounded-full cursor-pointer"
     :class="[this.getTheme, this.getSize]"
-    href="#"
+    @click="$emit('selected-tag', text)"
   >{{ text }}</a>
 </template>
 
