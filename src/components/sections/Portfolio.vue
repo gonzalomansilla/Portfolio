@@ -17,7 +17,7 @@
           <Proyect v-for="(proyect, index) in proyects" :key="index" :proyect="proyect"></Proyect>
         </div>
 
-        <p class="text-2xl text-center">
+        <p class="mx-auto w-max-content text-2xl text-center cursor-pointer">
           <i class="fas fa-chevron-down p-2 animate-pulse"></i>
         </p>
       </section>
