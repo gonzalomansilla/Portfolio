@@ -1,16 +1,16 @@
 # Porfolio
 
-> Este es un **update** del primer portfolio realizado totalmente estatico hecho sin ninguna libreria o framework y sin aplicar *responsive design*
+> Este es un **update** del primer portfolio realizado totalmente estático hecho sin ninguna librería o framework y sin aplicar *responsive design*
 
 
-Para ver la primer version revisar la rama `first-development`
+**Para ver la primera versiòn revisar la rama `first-development`**
 
 Con este proyecto decidí entrar al mundo del desarrollo WEB de forma autodidacta, por lo que es el primero que realice (y diseñe).
 
 En cuanto a las herramientas utilizadas, para el diseño se utilizó Figma ([link](https://www.figma.com/file/c3bssv7poc5hkzxES6VHefBi/Portafolio?node-id=91%3A0)). 
 Se utilizó metodologías que hacían al proyecto escalable y fácil de mantener, como [BEM](https://en.bem.info/methodology/quick-start/) y [SMACC](http://smacss.com/).
 
-Para dicha migración se opto por *Vue.js* como framework JS y *Tailwind* para el CSS aplicando un diseño *responsive*.
+Para dicha migración se opto por *Vue.js* como framework JS y *Tailwind* para el CSS aplicando un diseño *mobile first*.
 
 [Mobile](https://i.imgur.com/mZvVj7u.png) | [Tablet](https://i.imgur.com/gK1kQfJ.png)
 <img 
