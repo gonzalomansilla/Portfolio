@@ -1,4 +1,4 @@
-# Porfolio
+# Portafolio
 
 > Este es un **update** del primer portfolio realizado totalmente estático hecho sin ninguna librería o framework y sin aplicar *responsive design*
 
