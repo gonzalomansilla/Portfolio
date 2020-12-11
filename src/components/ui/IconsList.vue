@@ -7,7 +7,7 @@
     <a href="https://www.linkedin.com/in/gonzalomansilla" target="_blank" rel="external">
       <i class="fab fa-linkedin-in p-2"></i>
     </a>
-    <a href="https://github.com/NewtonGrav" target="_blank" rel="external">
+    <a href="https://github.com/gonzalomansilla" target="_blank" rel="external">
       <i class="fab fa-github p-2"></i>
     </a>
     <a href="https://es.stackoverflow.com/users/83332/gonzalom" target="_blank" rel="external">
