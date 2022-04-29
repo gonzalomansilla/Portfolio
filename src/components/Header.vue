@@ -9,7 +9,7 @@
         >
           <span class="text-primary-50">Hello</span>
           <span class="">, i'm </span>
-          <br class="block md:hidden" />Johon Doe
+          <br class="block md:hidden" />John Doe
         </h1>
 
         <h1

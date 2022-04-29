@@ -62,7 +62,7 @@ export default {
           descript:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia dolorum voluptas, amet consectetur adipisicing elit.",
           tecnologies: ["Vue", "C#"],
-          repositoryUrl: "https://github.com/NewtonGrav",
+          repositoryUrl: "",
         },
         {
           title: "Proyect Title",
@@ -70,7 +70,7 @@ export default {
           descript:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia dolorum voluptas, amet consectetur adipisicing elit.",
           tecnologies: ["JavaScript"],
-          repositoryUrl: "https://github.com/NewtonGrav",
+          repositoryUrl: "",
         },
         {
           title: "Proyect Title",
@@ -78,7 +78,7 @@ export default {
           descript:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia dolorum voluptas, amet consectetur adipisicing elit.",
           tecnologies: ["Java", "Spring Boot"],
-          repositoryUrl: "https://github.com/NewtonGrav",
+          repositoryUrl: "",
         },
         {
           title: "Proyect Title",
@@ -86,7 +86,7 @@ export default {
           descript:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia dolorum voluptas, amet consectetur adipisicing elit.",
           tecnologies: ["C#", ".NET Core"],
-          repositoryUrl: "https://github.com/NewtonGrav",
+          repositoryUrl: "",
         },
         {
           title: "Proyect Title",
@@ -94,7 +94,7 @@ export default {
           descript:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia dolorum voluptas, amet consectetur adipisicing elit.",
           tecnologies: ["Vue", ".NET Core"],
-          repositoryUrl: "https://github.com/NewtonGrav",
+          repositoryUrl: "",
         },
         {
           title: "Proyect Title",
@@ -102,7 +102,7 @@ export default {
           descript:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia dolorum voluptas, amet consectetur adipisicing elit.",
           tecnologies: ["Java"],
-          repositoryUrl: "https://github.com/NewtonGrav",
+          repositoryUrl: "",
         },
       ],
     };
